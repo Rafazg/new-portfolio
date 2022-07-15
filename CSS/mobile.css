@@ -1,4 +1,12 @@
-@media (max-width: 500px){
+@media (max-width: 428px){
+    body ::-webkit-scrollbar{
+        overflow: hidden;
+    }
+    main{
+        background-color: #0F0F16;
+        height: 100vh;
+        width: 130%;
+    }
     nav{
         display: flex;
         justify-content: space-between;
@@ -14,12 +22,35 @@
         width: 80px;
         margin-left: 25px;
     }
-
-
-
-
-
-
+    .nav-list{
+        position: absolute;
+        top: 9vh;
+        right: 0;
+        width: 0vw;
+        height: 92vh;
+        background-color: rgb(26, 24, 24);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(150%);
+    }
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+        margin-right: 30px;
+    }
+    .mobile-menu div{
+        width: 40px;
+        height: 2px;
+        background: rgb(23, 1, 146);
+        margin: 10px;
+    }
+    .nav-list.active{
+        transform: translateX(0);
+    }
     /*===== Title =====*/
     main .title{
         position: absolute;
@@ -30,7 +61,7 @@
         align-items: center;
         justify-content: center;
         top: 250px;
-        margin-right: 40px;
+        margin-right: 0px;
         font-family: 'IBM Plex Mono', monospace;
     
     }
@@ -39,14 +70,14 @@
         text-transform: uppercase;
         font-size: 1.3rem;
         letter-spacing: 0;
-        margin-right:  30px;
+        margin-right:  10px;
     }
     main .title h2{
         color: #fff;
         text-transform: uppercase;
         letter-spacing: 1px;
-        font-size: 2.5rem;
-        margin-left: 10px;
+        font-size: 2rem;
+        margin-left: 40px;
         margin-top: 5px;
     }
     main .title h3{
@@ -54,7 +85,7 @@
         text-transform: uppercase;
         letter-spacing: 5px;
         font-size: 1.5rem;
-        margin-left: 120px;
+        margin-right: 5px;
         margin-top: 5px;
     }
     main .title h4{
@@ -62,7 +93,7 @@
         text-transform: uppercase;
         letter-spacing: 5px;
         font-size: 0.9rem;
-        margin-right: 70px;
+        margin-right: 5px;
         margin-top: 10px;
     
 }
@@ -104,14 +135,24 @@ main .container .icons{
     color: #fff;
     transition: 0.5s ease;
 }
-
-
-
-
-
-
-
-
+}
+#about .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+    width: 180px; 
+    height: 786px;
+    border: 2px solid green;
+    margin-left: 25%;
+}
+#about .container h1{
+    color: #DADADA;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 3em;
+    letter-spacing: 2px;
+}
 
 
 
@@ -119,4 +160,3 @@ main .container .icons{
 
 /*===== Side menu =====*/
 
-}
