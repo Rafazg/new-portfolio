@@ -5,7 +5,7 @@
     main{
         background-color: #0F0F16;
         height: 100vh;
-        width: 130%;
+        width: 100%;
     }
     nav{
         display: flex;
@@ -54,8 +54,9 @@
     /*===== Title =====*/
     main .title{
         position: absolute;
-        width: 100%;
+        width: 80%;
         height: 20vh;
+        left: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -68,16 +69,16 @@
     main .title h1{
         color: #fff;
         text-transform: uppercase;
-        font-size: 1.3rem;
+        font-size: 1rem;
         letter-spacing: 0;
-        margin-right:  10px;
+        margin-right:  5px;
     }
     main .title h2{
         color: #fff;
         text-transform: uppercase;
         letter-spacing: 1px;
         font-size: 2rem;
-        margin-left: 40px;
+        margin-left: 20px;
         margin-top: 5px;
     }
     main .title h3{
@@ -94,13 +95,17 @@
         letter-spacing: 5px;
         font-size: 0.9rem;
         margin-right: 5px;
-        margin-top: 10px;
+        margin-top: 3px;
     
 }
     /*===== Title =====*/
-main .imgbox{
-    visibility: hidden;
-}
+    main .imgbox{
+        visibility: hidden;
+        width: 0;
+    }
+    main .imgbox img{
+        width: 0;
+    }
 
 /*===== Side menu =====*/
 
@@ -120,21 +125,26 @@ main .container .icons{
 .ig{
     padding: 10px 0;
     font-size: 1.7rem;
-    color: #fff;
+    color: #ff0278;
     transition: 0.5s ease;
 }
 .link{
     padding: 10px 0;
     font-size: 1.7rem;
-    color: #fff;
+    color: #02a2ff;
     transition: 0.5s ease;
 }
 .git{
     padding: 10px 0;
     font-size: 1.7rem;
-    color: #fff;
+    color: #ffffff;
     transition: 0.5s ease;
 }
+
+
+#about {
+    width: 100%;
+    height: 150vh;
 }
 #about .container{
     display: flex;
@@ -154,8 +164,70 @@ main .container .icons{
     letter-spacing: 2px;
 }
 
+#about .box-html ion-icon{
+    color: #ff5e00;
+    width: 169px;
+    height: 162px;
+    
+}
+#about .box-html .bar1{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 193px;
+    height: 14px;
+    transform: translateZ(20px);
+}
+#about .box-html .bar2{
+    background-color: rgb(66, 255, 82);
+    border-radius: 5px;
+    width: 141px;
+    height: 14px;
+    transform: translateZ(20px);
+}
+#about .box-js ion-icon{
+    color: #DBFF00;
+    width: 169px;
+    height: 162px;
+}
+#about .box-js .bar3{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 193px;
+    height: 14px;
+    transform: translateZ(20px);
+}
+#about .box-js .bar4{
+    background-color: rgb(66, 255, 82);
+    border-radius: 5px;
+    width: 36px;
+    height: 14px;
+    transform: translateZ(20px);
+}
+#about .box-css ion-icon{
+    color: #004DE2;
+    width: 169px;
+    height: 162px;
+}
+#about .box-css .bar5{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 193px;
+    height: 14px;
+    transform: translateZ(20px);
+}
+#about .box-css .bar6{
+    background-color: rgb(66, 255, 82);
+    border-radius: 5px;
+    width: 120px;
+    height: 14px;
+    transform: translateZ(20px);
+}
 
 
+
+
+
+}
 
 
 /*===== Side menu =====*/
