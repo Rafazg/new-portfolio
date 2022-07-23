@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=Oswald:wght@500&family=Outfit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -166,6 +168,9 @@ main .title h4{
     margin-top: 15;
 
 }
+/*====== Main Content ======*/
+
+/*====== Section about ======*/
 #about{
     width: 100%;
     height: 150vh;
@@ -175,37 +180,54 @@ main .title h4{
 }
 #about .info{
     width: 45rem;
-    height: 500px;
+    height: 450px;
     border-radius: 5px;
-    background-color: #ffffff92;
+    border: 2px solid white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 190px;
+    margin-top: 100px;
     gap: 50px;
 }
 #about .name{
-    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 15rem;
     height: 50px;
-    
+    margin-top: 50px;
 }
 #about .name h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
+    font-family: 'Russo One', sans-serif;
+    color: #fff;
 }
 #about .description{
-    border: 2px solid green;
     width: 40rem;
     height: 250px;
-    font-size: 1.7rem;
+}
+#about .description p{
+    font-size: 1.4rem;
+    color: #fff;
+    font-family: 'Russo One', sans-serif;
+}
+#about .titleStack{
+    position: absolute;
+    margin-top: 680px;
+    font-family: 'IBM Plex Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 25px;
+    color: #fff;
 }
 #about .image{
     overflow: hidden;
     position: absolute;
-    width: 250px;
-    height: 250px;
+    width: 170px;
+    height: 170px;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 150px;
     box-shadow: 5px 1px 1px rgb(2, 31, 249);
@@ -216,8 +238,8 @@ main .title h4{
     box-shadow: none;
 }
 #about .image img{
-    width: 250px;
-    height: 250px;
+    width: 170px;
+    height: 170px;
 }
 #about .container{
     position:absolute;
@@ -228,7 +250,6 @@ main .title h4{
     gap: 50px;
     width: 50%; 
     height: 200px;
-    border: 2px solid green;
     margin-top: 750px
 }
 #about .box-html, .box-css, .box-js{
@@ -310,5 +331,96 @@ main .title h4{
     width: 120px;
     height: 14px;
     transform: translateZ(20px);
+}
+/*====== Section about ======*/
+
+/*====== Projects Content ======*/
+
+#projects{
+    width: 100%;
+    height: 150vh;
+    background-color: #0F0F16;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+#projects .title{
+    width: 200px;
+    height: 50px;
+    margin-right: 900px;
+    margin-top: 100px;
+}
+#projects .title h1{
+    text-transform: uppercase;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 3.4rem;
+    color: #DADADA;
+}
+#projects .container1{
+    width: 1300px;
+    height: 400px;
+    background-color: #b8b8b8;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#projects .project01, .project02, .project03{
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    border: 3px solid rgb(77, 50, 229);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;  
+}
+#projects .project01 img{
+    width: 400px;
+    height: 300px;
+}
+#projects .button01, .button02, .button03{
+    position: absolute;
+    width: 110px;
+    height: 30px;
+    margin-bottom: 15px;
+    background-color: #dfdede;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateZ(50px);
+}
+#projects .container2{
+    width: 1300px;
+    height: 318px;
+    background-color: #b8b8b8;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#projects .project04, .project05, .project06{
+    width: 400px;
+    height: 300px;
+    border: 2px solid rgb(61, 51, 250);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.button04, .button05, .button06{
+    width: 130px;
+    height: 40px;
+    margin-bottom: 15px;
+    background-color: #02a2ff;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 

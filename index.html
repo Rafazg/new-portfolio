@@ -6,16 +6,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/tablet.css">
-    <link rel="stylesheet" href="CSS/mobile.css">
+
+
+    <link rel="stylesheet" href="src/CSS/style.css">
+    <link rel="stylesheet" href="src/CSS/tablet.css">
+    <link rel="stylesheet" href="src/CSS/mobile.css">
+
     <title>Document</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <img src="images/Logo.png" alt="">
+            <img src="src/images/Logo.png" alt="">
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -46,7 +49,7 @@
                 </a>
             </div>
             <div class="imgbox">
-                <img src="images/Backgroundimg.png" alt="">
+                <img src="src/images/Backgroundimg.png" alt="">
             </div>
         </div>
 
@@ -62,18 +65,22 @@
 
     <section id="about">
         <div class="image" data-tilt data-tilt-scale="1.2">
-            <img src="images/profile.jpg" alt="">
+            <img src="src/images/profile.jpg" alt="">
         </div>
         <div class="info">
             <div class="name">
                 <h1>Rafael Silva</h1>
             </div>
             <div class="description">
-                <p>Eae, tudo bem? Seja bem vindo ao meu portfólio. Desde pequeno sempre fui apaixonado por video games, e foi por essa paixão que eu descobri o mundo da tecnologia mais profundamente.<br> Decidir então estudar de forma autodidata conceitos básicos de algumas linguagems até encontrar o JavaScript e com ele o HTML e o CSS que me fizeram ter mais vontade de estudar e conhecer mais ainda do Front-End.
+                <p>Eae, tudo bem? Seja bem vindo ao meu portfólio. Desde pequeno sempre fui apaixonado por video games,
+                    e foi por essa paixão que eu descobri o mundo da tecnologia mais profundamente.<br> Decidir então
+                    estudar de forma autodidata conceitos básicos de algumas linguagems até encontrar o JavaScript e com
+                    ele o HTML e o CSS que me fizeram ter mais vontade de estudar e conhecer mais ainda do Front-End.
                 </p>
             </div>
         </div>
-            
+        <div class="titleStack">
+            <h1>Current Stacks</h1>
         </div>
         <div class="container">
             <div class="box-html" data-tilt data-tilt-max="20" data-tilt-speed="200" data-tilt-perspective="700"
@@ -100,7 +107,48 @@
                 <div class="bar5">
                     <div class="bar6"></div>
                 </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="projects">
+        <div class="title">
+            <h1>Projects</h1>
+        </div>
+        <div class="container1">
+            <div class="project01" data-tilt data-tilt-reverse="true" data-tilt-scale="1.2">
+                <div class="button01" data-tilt data-tilt-scale="1.1">
+                    <a href="">View</a>
+                </div>
+                <img src="src/images/login-project.PNG" alt="">
+            </div>
+
+            <div class="project02">
+                <div class="button02">
+                    <a href="">View</a>
+                </div>
+            </div>
+            <div class="project03">
+                <div class="button03">
+                    <a href="">View</a>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="project04">
+                <div class="button04">
+                    <a href="">View</a>
+                </div>
+            </div>
+            <div class="project05">
+                <div class="button05">
+                    <a href="">View</a>
+                </div>
+            </div>
+            <div class="project06">
+                <div class="button06">
+                    <a href="">View</a>
+                </div>
             </div>
         </div>
     </section>
@@ -112,6 +160,6 @@
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="node_modules/vanilla-tilt/lib/vanilla-tilt.js"></script>
+<script src="src/node_modules/vanilla-tilt/lib/vanilla-tilt.js"></script>
 
 </html>
